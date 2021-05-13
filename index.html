@@ -14,10 +14,12 @@
 <img id="mainImage" src="five.png">
 
 <script>
-    var imgArray = ["five.png", "four.png", "three.png", "two.png", "one.png", "zero.png", "extra.png"];
+    //Arrays for the images used
+    var imgArray = ["five.png", "four.png", "three.png", "two.png", "one.png", "zero.png", "extra.png"]; 
     var lastImg = ["fin.png"];
     var imgIndex = 0;
 
+    //Function will loop through the imgArray using setInterval, then refreshId will stop the looping
     function newImg()
     {
         var refreshId = setInterval(function(){
