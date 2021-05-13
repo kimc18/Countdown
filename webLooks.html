@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="styles.css" rel = "stylesheet" type="text/css"/>
+<title>Hand Countdown</title>
+</head>
+<body>
+
+<h1 id="head1">Countdown</h1>
+<div class="centerTxt">
+    <p id="p1">Press on the button to start the countdown</p>
+</div>
+<button id="center" type="button" onclick="newImg()">Start</button>
+<img id="mainImage" src="five.png">
+
+<script>
+    var imgArray = ["five.png", "four.png", "three.png", "two.png", "one.png", "zero.png", "extra.png"];
+    var lastImg = ["fin.png"];
+    var imgIndex = 0;
+
+    function newImg()
+    {
+        var refreshId = setInterval(function(){
+            imgIndex = imgIndex+1;
+            var x = document.getElementById('mainImage');
+            x.src=imgArray[imgIndex];
+            if (imgIndex == 6)
+            {
+                var x2 = document.getElementById('mainImage');
+                x2.src=lastImg[0];
+                clearInterval(refreshId);
+            }
+        }, 2000);
+    }
+</script>
+
+</body>
+</html> 

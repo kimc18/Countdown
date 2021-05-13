@@ -1,0 +1,44 @@
+#head1{
+    color:blueviolet;
+    text-align: center;
+    font-family:'Courier New', Courier, monospace;
+}
+
+#p1{
+    text-align: center;
+}
+
+.centerTxt{
+    margin: 0;
+    position: relative;
+    top: 5%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+#center{
+    margin: 0;
+    position: absolute;
+    top: 6%;
+    left: 15%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+#mainImage{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.wrapper{
+    text-align: center;
+}
+
+body{
+     background-color:lightpink;
+}
