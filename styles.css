@@ -31,7 +31,8 @@
     margin: auto;
     cursor: pointer;
     -webkit-transition-duration: 0.4s; /* Safari */
-    transition-duration: 0.4s;  
+    transition-duration: 0.4s;
+    
 }
 
 .button1:hover {
@@ -41,10 +42,12 @@
 #mainImage{
     margin: 0;
     position: absolute;
-    top: 50%;
+    top: 45%;
     left: 50%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
+    width: 600px;
+    filter: drop-shadow(9px 20px 3px rgba(0, 0, 0, 0.322));
 }
 
 .wrapper{
