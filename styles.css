@@ -31,8 +31,7 @@
     margin: auto;
     cursor: pointer;
     -webkit-transition-duration: 0.4s; /* Safari */
-    transition-duration: 0.4s;
-    
+    transition-duration: 0.4s;  
 }
 
 .button1:hover {
