@@ -10,7 +10,7 @@
 <div class="centerTxt">
     <p id="p1">Press on the button to start the countdown</p>
 </div>
-<button id="center" type="button" onclick="newImg()">Start</button>
+<button class="button button1" type="button" onclick="newImg()">Start</button>
 <img id="mainImage" src="five.png">
 
 <script>
@@ -18,11 +18,15 @@
     var imgArray = ["five.png", "four.png", "three.png", "two.png", "one.png", "zero.png", "extra.png"]; 
     var lastImg = ["fin.png"];
     var imgIndex = 0;
+    var clickCounter = 0;
 
     //Function will loop through the imgArray using setInterval, then refreshId will stop the looping
     function newImg()
     {
-        var refreshId = setInterval(function(){
+        clickCounter++;
+        if (clickCounter == 1)
+        {
+            var refreshId = setInterval(function(){
             imgIndex = imgIndex+1;
             var x = document.getElementById('mainImage');
             x.src=imgArray[imgIndex];
@@ -33,6 +37,12 @@
                 clearInterval(refreshId);
             }
         }, 2000);
+        }
+        
+        if (clickCounter == 2)
+        {
+            document.location.reload(true);
+        }
     }
 </script>
 
